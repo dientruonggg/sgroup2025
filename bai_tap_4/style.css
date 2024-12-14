@@ -10,6 +10,7 @@ body{
     padding: 1em;
     line-height: 1.4;
 }
+/* common */
 a {
     color: #07a
 }
@@ -36,10 +37,43 @@ blockquote author {
     margin-left: 2.4rem;
     font-style: oblique
 }
-
-.imgstyle{
-    display:inline-block;
+small{
+    font-size: 0.4rem;
+}
+/* classes */
+.picture {
+    display: flex;
+    justify-content: space-around;
+}
+.picture img{
     max-width: 350px;
     max-height: 400px;
     overflow: hidden;
+}
+
+span.motherfuckingwebsite{
+    color: #730000
+}
+span.wrong {
+    color: #c0392b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase ;
+}
+span.shittyblue{
+    color: #00e
+}
+span.violetishcolor{
+    color: #551a8b
+}
+span.lesscontrast_cool{
+    color: #444;
+    font-weight: 700;
+}
+span.lesscontrast_better{
+    color: #454545;
+    font-weight: 700;
+}
+.underline{
+    text-decoration: underline;
 }
