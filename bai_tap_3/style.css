@@ -1,39 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+:root {
+    --primary-color: rgb(214 99 104);
+	--text-color: #454545;
+}
 body {
     max-width: 1024px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
-
 .background_color{
     color: rgb(214 99 104);
 }
-
+h2{
+    display: inline-block;
+    border-bottom: 3px solid var(--primary-color);
+}
+/* Common Style */
+/* Flex section: */
 .dflex{
     display: flex;
     flex-direction: row;
 }
-
 .dinline-flex{
     display: inline-flex;
+}
+.flex-direction_column{
+    flex-direction: column;
+}
+.flexwrap{
+    flex-wrap: wrap;
 }
 .center{
     justify-content: center;
 }
-
 .spacebetween{
     justify-content: space-between;
 }
-
 .align-items-center{
     align-items: center;
 }
+/* End flex section! */
+/* Margin and Padding Section: */
+.margin_top_50px{
+    margin-top: 50px;
+}
+.margin_top_20px{
+    margin-top: 20px;
+}
+.margin-left_20px{
+    margin-left: 20px;
+}
 
+.margin-right_20px{
+    margin-right: 20px;
+}
+.margin-common{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.gap50px{
+    gap: 50px;
+}
+.gap10px{
+    gap: 10px;
+}
+/* End margin section! */
+/* Image section: */
+.img_max-width-300{
+    max-width: 300px;
+}
+.img_max-height-350{
+    max-height: 350px;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+/* Text section: */
+.text-transform_uppercase{
+    text-transform: uppercase;
+}
+.font_size35px{
+    font-size: 35px;
+}
+.font_size30px{
+    font-size: 30px;
+}
+.font_size25px{
+    font-size: 25px;
+}
+.font_size20px{
+    font-size: 20px;
+}
+.font_size15px{
+    font-size: 15px;
+}
+.font-weight_bold{
+    font-weight: bold;
+}
+/* End text section! */
+/* Specific class */
 .name_symbol{
     display: inline-flex;
     justify-items: center;
@@ -42,29 +114,30 @@ body {
     width: 30px;
     height: 30px;
 }
-
-.margin-common{
-    margin-left: 20px;
-    margin-right: 20px;
+.exp span{
+    color: var(--primary-color);
+    font-weight: bold;
 }
-.margin_top_50px{
-    margin-top: 50px;
+.download{
+    text-align: center;
 }
-
-.img_max-width-350{
-    max-width: 350px;
+.downloadBtn:hover{
+    box-shadow: 0px 4px 8px #454545;
+    background-color: pink;
 }
-
-.img_max-height-400{
-   max-height: 400px;
+.downloadBtn {
+	border: 3px;
+	border-style: solid;
+	padding: 8px 12px;
+	border-radius: 20px;
+	border-color: var(--primary-color) ;
+	font-size: 15px;
+	color: var(--primary-color);
+    text-decoration: none;
 }
-
-.overflow-hidden{
-    overflow: hidden;
-}
-.text-transform_uppercase{
-    text-transform: uppercase;
-}
-.flex-direction_column{
-    flex-direction: column;
+.skill {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
 }
