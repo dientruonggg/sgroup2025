@@ -1,0 +1,68 @@
+.grid  
+- position: relative;: Sets the container as a reference for absolute positioning of its children.  
+- margin: 0 auto;: Centers the grid horizontally.  
+- padding: 1em 0 4em;: Adds 1em padding at the top and 4em at the bottom.  
+- max-width: 1000px;: Limits the grid's width to 1000px.  
+- text-align: center;: Centers inline content.
+
+---
+
+.grid figure
+- position: relative;: Sets the figure as a reference for absolutely positioned child elements.  
+- float: left;: Aligns figures to the left.  
+- overflow: hidden;: Hides content overflowing the figure’s bounds.  
+- margin: 10px 1%;: Adds spacing around the figure.  
+- min-width: 320px; max-width: 480px;: Limits the figure's width.  
+- width: 48%;: Allows two figures per row with 2% space.  
+- background: #3085a3;: Sets a blue background color.  
+- cursor: pointer;: Changes the mouse pointer to a hand icon.
+
+---
+
+.grid figure img
+- position: relative;: Ensures relative positioning within the figure.  
+- display: block;: Prevents inline behavior.  
+- min-height: 100%; max-width: 100%;: Scales the image proportionally.  
+- opacity: 0.8;: Slightly reduces image visibility.
+
+---
+
+.grid figure figcaption
+- padding: 2em;: Adds space inside the figcaption.  
+- color: #fff;: Sets white text color.  
+- text-transform: uppercase;: Capitalizes text.  
+- font-size: 1.25em;: Enlarges the text size.  
+- backface-visibility: hidden;: Hides figcaption during transformations.
+
+---
+
+.grid figure figcaption::before, .grid figure figcaption::after
+- pointer-events: none;: Disables interaction.
+
+---
+
+.grid figure h2, p
+- margin: 0;: Removes default margins.  
+- word-spacing: -0.15em;: Reduces space between words for headings.  
+- letter-spacing: 1px;: Adds space between letters in paragraphs.
+
+---
+
+figure.effect-zoe
+- figcaption {}: Moves figcaption outside the visible area and slides it up during hover using transform.  
+- p.icon-links a:hover: Changes icon link color when hovered.  
+- h2 and p.description: Animates text into view with opacity and transform transitions.  
+
+---
+
+Transition and Animation
+- transition: Smoothly animates position, opacity, or color changes.  
+- transform: Moves elements in 3D space for hover effects.  
+- transition-delay: Adds delay to animations for a staggered effect.  
+
+---
+
+Icon Styling
+- .icon-eye, .icon-paper-clip, .icon-heart: Uses ::before to display custom icons via Unicode.  
+
+Let me know if you want any section expanded!

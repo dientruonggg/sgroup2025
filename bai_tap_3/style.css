@@ -4,7 +4,6 @@
 	--text-color: #454545;
 }
 body {
-    max-width: 1024px;
     margin: auto;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
